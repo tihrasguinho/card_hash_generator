@@ -1,3 +1,3 @@
-## [0.0.1] - TODO: Add release date.
+## [0.0.1] - Release inicial.
 
-* TODO: Describe initial release.
+* Gerador de card_hash para utilização na plataforma Pagar.me
