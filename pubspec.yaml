@@ -1,6 +1,6 @@
 name: card_hash_generator
-description: A package to generate card_hash for use in Pagar.me
-version: 0.0.1
+description: Um package para gerar card_hash para uso na Pagar.me!
+version: 0.0.2
 homepage: https://github.com/tihrasguinho/card_hash_generator
 
 environment:

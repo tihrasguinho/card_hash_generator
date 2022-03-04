@@ -32,7 +32,7 @@ class CardHashGenerator {
         final encrypted = encrypter.encrypt(card);
         return '${data['id']}_${encrypted.base64}';
       } else {
-        throw CardHashException('Não foi possível gerar card_hash, verifique suas informações passadas');
+        throw CardHashException('Não foi possível gerar card_hash, verifique suas informações passadas!');
       }
     } on CardHashException {
       rethrow;
