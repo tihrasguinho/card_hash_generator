@@ -15,6 +15,22 @@ class CardHashGenerator {
     required String cardCvv,
   }) async {
     try {
+      if (!RegExp('^[0-9]{16}\$').hasMatch(cardNumber)) {
+        throw CardHashException('Números do cartão inválido, por favor, apenas números sem caracteres especiais!');
+      }
+
+      if (!RegExp('^[a-zA-Z]+\$').hasMatch(cardCvv)) {
+        throw CardHashException('CVV inválido, por favor, apenas números sem caracteres especiais!');
+      }
+
+      if (!RegExp('^[0-9]{4}\$').hasMatch(cardExpirationDate)) {
+        throw CardHashException('Data de expiração inválida, por favor, apenas números sem caracteres especiais!');
+      }
+
+      if (!RegExp('^[0-4]{3}\$').hasMatch(cardCvv)) {
+        throw CardHashException('CVV inválido, por favor, apenas números sem caracteres especiais!');
+      }
+
       final dio = Dio();
 
       final response = await dio.get(
