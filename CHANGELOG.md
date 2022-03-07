@@ -1,3 +1,7 @@
+## [0.0.3+hotfix.1] - Correções
+
+* Coreção de regex para Nome do Titular e CVV
+
 ## [0.0.3] - Exceções para dados passados
 
 * Exceções para verificação de dados passados. Ex: Número de cartão apenas números, Data de validade sem '/'.

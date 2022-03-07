@@ -19,7 +19,7 @@ class CardHashGenerator {
         throw CardHashException('Números do cartão inválido, por favor, apenas números sem caracteres especiais!');
       }
 
-      if (!RegExp('^[a-zA-Z]+\$').hasMatch(cardCvv)) {
+      if (!RegExp('^[a-zA-Z]{4,}(?: [a-zA-Z]+){0,2}\$').hasMatch(cardHolderName)) {
         throw CardHashException('CVV inválido, por favor, apenas números sem caracteres especiais!');
       }
 
@@ -27,7 +27,7 @@ class CardHashGenerator {
         throw CardHashException('Data de expiração inválida, por favor, apenas números sem caracteres especiais!');
       }
 
-      if (!RegExp('^[0-4]{3}\$').hasMatch(cardCvv)) {
+      if (!RegExp('^[0-9]{3}\$').hasMatch(cardCvv)) {
         throw CardHashException('CVV inválido, por favor, apenas números sem caracteres especiais!');
       }
 
