@@ -1,3 +1,7 @@
+## [0.0.3+hotfix.1] - Correção de exception
+
+* Exception de card_holder foi corrigida
+
 ## [0.0.3+hotfix.1] - Correções
 
 * Coreção de regex para Nome do Titular e CVV

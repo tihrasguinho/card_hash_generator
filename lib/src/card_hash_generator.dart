@@ -20,7 +20,7 @@ class CardHashGenerator {
       }
 
       if (!RegExp('^[a-zA-Z]{4,}(?: [a-zA-Z]+){0,2}\$').hasMatch(cardHolderName)) {
-        throw CardHashException('CVV inválido, por favor, apenas números sem caracteres especiais!');
+        throw CardHashException('Nome inválido, por favor, apenas letras sem caracteres especiais!');
       }
 
       if (!RegExp('^[0-9]{4}\$').hasMatch(cardExpirationDate)) {
