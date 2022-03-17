@@ -1,4 +1,4 @@
-## [0.0.3+hotfix.1] - Correção de exception
+## [0.0.3+hotfix.2] - Correção de exception
 
 * Exception de card_holder foi corrigida
 
